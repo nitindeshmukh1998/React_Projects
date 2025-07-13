@@ -6,7 +6,7 @@ const cardData = [
   {
     idCategory: "2",
     strCategory: "Chicken",
-    dishPrice: "100",
+    dishPrice: "120",
     strCategoryThumb: "https://www.themealdb.com/images/category/chicken.png",
     strCategoryDescription: "Chicken is a type of domesticated fowl",
   },
@@ -167,7 +167,24 @@ const PageBody = () => {
   );
 };
 const Footer = () => {
-  return <h3>Footer</h3>;
+  return (
+<footer className="footer-container">
+  <div className="footer-content">
+  <h2>Nitin's Food Gallery</h2>
+  <p>&copy; {new Date().getFullYear()} Nitin's Food Gallery. All rights reserved.</p>
+  </div>
+  <div className="footer-contacts">
+    <p>Contact us:</p>
+    <ul>
+    <li>Email: nitindeshmukh1998@gmail.com</li>
+    <li>Phone: +91-123456789</li>
+    <li>Instagram: @aughad_fakir</li>
+ 
+    </ul>
+  
+  </div>
+</footer>
+  )
 };
 
 function App() {
