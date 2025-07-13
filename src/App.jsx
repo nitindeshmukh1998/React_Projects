@@ -13,21 +13,21 @@ const cardData = [
   {
     idCategory: "1",
     strCategory: "Dessert",
-    dishPrice: "100",
+    dishPrice: "150",
     strCategoryThumb: "https://www.themealdb.com/images/category/dessert.png",
     strCategoryDescription: "Dessert is a course that concludes a meal. ",
   },
   {
     idCategory: "3",
     strCategory: "Beef",
-    dishPrice: "100",
+    dishPrice: "190",
     strCategoryThumb: "https://www.themealdb.com/images/category/beef.png",
     strCategoryDescription: "Beef is the culinary name for meat from cattle",
   },
   {
     idCategory: "4",
     strCategory: "Lamb",
-    dishPrice: "100",
+    dishPrice: "150",
     strCategoryThumb: "https://www.themealdb.com/images/category/lamb.png",
     strCategoryDescription:
       "Lamb, hogget, and mutton are the meat of domestic sheep ",
@@ -35,7 +35,7 @@ const cardData = [
   {
     idCategory: "5",
     strCategory: "Miscellaneous",
-    dishPrice: "100",
+    dishPrice: "120",
     strCategoryThumb:
       "https://www.themealdb.com/images/category/miscellaneous.png",
     strCategoryDescription:
@@ -44,7 +44,7 @@ const cardData = [
   {
     idCategory: "6",
     strCategory: "Pasta",
-    dishPrice: "100",
+    dishPrice: "120",
     strCategoryThumb: "https://www.themealdb.com/images/category/pasta.png",
     strCategoryDescription:
       "Pasta is a staple food of traditional Italian cuisine",
@@ -52,7 +52,7 @@ const cardData = [
   {
     idCategory: "7",
     strCategory: "Pork",
-    dishPrice: "100",
+    dishPrice: "140",
     strCategoryThumb: "https://www.themealdb.com/images/category/pork.png",
     strCategoryDescription:
       "Pork is the culinary name for meat from a domestic pig",
@@ -67,7 +67,7 @@ const cardData = [
   {
     idCategory: "9",
     strCategory: "Side",
-    dishPrice: "100",
+    dishPrice: "1900",
     strCategoryThumb: "https://www.themealdb.com/images/category/side.png",
     strCategoryDescription:
       "A side dish, sometimes referred to as a side order",
@@ -75,21 +75,21 @@ const cardData = [
   {
     idCategory: "10",
     strCategory: "Starter",
-    dishPrice: "100",
+    dishPrice: "200",
     strCategoryThumb: "https://www.themealdb.com/images/category/starter.png",
     strCategoryDescription: "An entrée in modern French table service ",
   },
   {
     idCategory: "11",
     strCategory: "Vegan",
-    dishPrice: "100",
+    dishPrice: "400",
     strCategoryThumb: "https://www.themealdb.com/images/category/vegan.png",
     strCategoryDescription: "Veganism is both the practice good for helth",
   },
   {
     idCategory: "12",
     strCategory: "Vegetarian",
-    dishPrice: "100",
+    dishPrice: "200",
     strCategoryThumb:
       "https://www.themealdb.com/images/category/vegetarian.png",
     strCategoryDescription: "Vegetarianism is the practice of abstaining ",
@@ -104,7 +104,7 @@ const cardData = [
   {
     idCategory: "14",
     strCategory: "Goat",
-    dishPrice: "100",
+    dishPrice: "130",
     strCategoryThumb: "https://www.themealdb.com/images/category/goat.png",
     strCategoryDescription: "The domestic goat or simply goat",
   },
@@ -139,7 +139,7 @@ const SearchBox = () => {
 };
 
 const ItemCards = (props) => {
-  const { strCategory, idCategory, strCategoryDescription, strCategoryThumb } =
+  const { strCategory, strCategoryDescription, strCategoryThumb ,dishPrice} =
     props;
   console.log(props);
   return (
@@ -149,7 +149,7 @@ const ItemCards = (props) => {
       <div className="item-details">
         <p>{strCategoryDescription}</p>
         <h4>{strCategory}</h4>
-        <h4>{`RS. ${idCategory}`}</h4>
+        <h4>{`RS. ${dishPrice}`}</h4>
         <button>Add To CART</button>
       </div>
     </div>
