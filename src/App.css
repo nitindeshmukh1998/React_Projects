@@ -1,0 +1,114 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: linear-gradient(135deg, #e0e0e0 0%, #6abf69 100%);
+}
+.brand-name{
+  display: flex;
+  align-items: center;
+}
+.brand-name > h1{
+  text-align: center;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.brand-logo {
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  border-radius: 50px;
+  padding: 2px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: right;
+}
+
+.nav-tabs > li {
+  margin: 0px 10px;
+  color: #222; /* Dark text for contrast */
+  font-size: larger;
+  align-items: center;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-tabs > li:hover {
+  cursor: pointer;
+  color: #005a32; /* Accessible green */
+  font-weight: bold;
+}
+
+.search-box {
+  margin: 10px;
+}
+
+.search-box > input {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #888;
+  background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+  color: #222; /* Dark text */
+}
+
+.search-box > label {
+  font-weight: bolder;
+  color: #222;
+}
+
+.items-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.item-cards {
+  background: linear-gradient(135deg, #e0e0e0 0%, #6abf69 100%);
+  border-radius: 10px;
+  width: 235px;
+  margin: 5px;
+  box-shadow: 0 4px 16px rgba(128, 128, 128, 0.15);
+}
+
+.item-cards > img {
+  align-self: center;
+  width: 195px;
+  height: 195px;
+  margin: 5px 20px 0px 20px;
+  border-radius: 20px;
+}
+
+.item-details {
+  text-align: left;
+  margin: 10px;
+  padding: auto;
+}
+
+.item-details > p {
+  text-align: justify;
+  margin: 10px;
+  color: #222; /* Dark text */
+  flex-wrap: wrap;
+}
+
+.item-details > h4 {
+  margin: 10px;
+  color: #111; /* Very dark text */
+}
+
+.item-details > button {
+  width: 210px;
+  height: 30px;
+  border-radius: 25px;
+  align-self: center;
+  background: linear-gradient(135deg, #005a32 0%, #1976d2 100%);
+  border: none;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.item-details > button:hover {
+  background: linear-gradient(135deg, #1976d2 0%, #005a32 100%);
+}
